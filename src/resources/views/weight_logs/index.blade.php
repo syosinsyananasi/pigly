@@ -48,7 +48,9 @@
                 <span class="search__separator">～</span>
                 <input class="search__date" type="date" name="to_date" value="{{ $searchToDate ?? '' }}">
                 <button class="search__button" type="submit">検索</button>
-                <button class="search__reset" type="button" onclick="location.href='{{ route('weight_logs.index') }}'">リセット</button>
+                @if($isSearching ?? false)
+                    <button class="search__reset" type="button" onclick="location.href='{{ route('weight_logs.index') }}'">リセット</button>
+                @endif
             </div>
         </form>
         <a class="search__add-button" href="{{ route('weight_logs.create') }}">データ追加</a>

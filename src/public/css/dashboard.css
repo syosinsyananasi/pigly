@@ -90,11 +90,21 @@
 .summary__item {
     flex: 1;
     padding: 2rem 3rem;
-    border-right: 1px solid var(--color-border);
+    position: relative;
 }
 
-.summary__item:last-child {
-    border-right: none;
+.summary__item::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 20%;
+    height: 60%;
+    width: 1px;
+    background-color: var(--color-border);
+}
+
+.summary__item:last-child::after {
+    display: none;
 }
 
 .summary__label {
