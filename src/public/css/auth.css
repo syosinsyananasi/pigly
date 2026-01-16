@@ -1,6 +1,19 @@
 .auth-body {
     min-height: 100vh;
-    background: linear-gradient(135deg, #f8d7e8 0%, #fce4ec 25%, #f3e5f5 50%, #e8f5e9 75%, #fce4ec 100%);
+    background:
+        linear-gradient(to bottom,
+            transparent 0%,
+            rgba(254, 208, 210, 0.3) 30%,
+            rgba(254, 208, 210, 0.7) 50%,
+            #FED0D2 70%,
+            #FFC0B9 100%
+        ),
+        linear-gradient(to right,
+            #D6CFF8 0%,
+            #F5CEF3 50%,
+            #FA86B7 100%
+        );
+    background-blend-mode: normal;
     display: flex;
     align-items: center;
     justify-content: center;
