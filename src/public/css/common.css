@@ -35,3 +35,19 @@
     color: var(--color-primary);
     letter-spacing: 0.1em;
 }
+
+::placeholder {
+    color: #E6E6E6;
+}
+
+::-webkit-input-placeholder {
+    color: #E6E6E6;
+}
+
+::-moz-placeholder {
+    color: #E6E6E6;
+}
+
+:-ms-input-placeholder {
+    color: #E6E6E6;
+}

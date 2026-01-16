@@ -35,7 +35,9 @@
                         日付
                         <span class="modal__required">必須</span>
                     </label>
-                    <input class="modal__input" type="date" id="date" name="date" value="{{ old('date', date('Y-m-d')) }}">
+                    <div class="modal__date-wrapper">
+                        <input class="modal__input modal__input--date" type="date" id="date" name="date" value="{{ old('date', date('Y-m-d')) }}">
+                    </div>
                     @error('date')
                         <p class="modal__error">{{ $message }}</p>
                     @enderror
@@ -74,7 +76,7 @@
                         運動時間
                         <span class="modal__required">必須</span>
                     </label>
-                    <input class="modal__input" type="time" id="exercise_time" name="exercise_time" value="{{ old('exercise_time', '00:00') }}">
+                    <input class="modal__input" type="text" id="exercise_time" name="exercise_time" value="{{ old('exercise_time') }}" placeholder="01:30">
                     @error('exercise_time')
                         <p class="modal__error">{{ $message }}</p>
                     @enderror
