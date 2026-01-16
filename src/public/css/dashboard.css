@@ -61,7 +61,7 @@
 .main {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 3rem;
+    padding: 6rem 3rem 3rem;
     background-color: #F9F9F9;
 }
 
@@ -127,6 +127,12 @@
     font-size: 1.6rem;
     font-weight: 400;
     margin-left: 0.3rem;
+}
+
+.content-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
 }
 
 .search {
@@ -221,8 +227,6 @@
 }
 
 .log-table {
-    background-color: var(--color-white);
-    border-radius: var(--border-radius);
     overflow: hidden;
 }
 
