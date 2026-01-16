@@ -48,7 +48,7 @@
                 <span class="search__separator">～</span>
                 <input class="search__date" type="date" name="to_date" value="{{ $searchToDate ?? '' }}">
                 <button class="search__button" type="submit">検索</button>
-                <a class="search__reset" href="{{ route('weight_logs.index') }}">リセット</a>
+                <button class="search__reset" type="button" onclick="location.href='{{ route('weight_logs.index') }}'">リセット</button>
             </div>
         </form>
         <a class="search__add-button" href="{{ route('weight_logs.create') }}">データ追加</a>
@@ -77,7 +77,7 @@
                         <td class="log-table__cell">{{ $log->calories }}cal</td>
                         <td class="log-table__cell">{{ \Carbon\Carbon::parse($log->exercise_time)->format('H:i') }}</td>
                         <td class="log-table__cell log-table__cell--action">
-                            <a class="log-table__edit-link" href="{{ route('weight_logs.show', $log) }}">&#9998;</a>
+                            <a class="log-table__edit-link" href="{{ route('weight_logs.show', $log) }}"><i class="fa-solid fa-pencil"></i></a>
                         </td>
                     </tr>
                 @empty

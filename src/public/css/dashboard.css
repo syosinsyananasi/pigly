@@ -109,7 +109,7 @@
 }
 
 .summary__value--diff {
-    color: var(--color-secondary);
+    color: var(--color-text);
 }
 
 .summary__unit {
@@ -150,29 +150,38 @@
 }
 
 .search__button {
+    flex: 0 0 100px;
     padding: 0.8rem 2rem;
     font-size: 1.4rem;
+    font-family: inherit;
     color: var(--color-white);
     background-color: #888;
-    border: none;
+    border: 1px solid #888;
     border-radius: var(--border-radius);
     cursor: pointer;
     transition: background-color 0.2s;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 .search__button:hover {
     background-color: #666;
+    border-color: #666;
 }
 
 .search__reset {
+    flex: 0 0 100px;
     padding: 0.8rem 2rem;
     font-size: 1.4rem;
+    font-family: inherit;
     color: var(--color-text);
     background-color: var(--color-background);
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius);
     cursor: pointer;
     transition: background-color 0.2s;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 .search__reset:hover {
@@ -246,12 +255,16 @@
 .log-table__edit-link {
     display: inline-block;
     font-size: 1.8rem;
-    color: var(--color-primary);
+    color: #e891b1;
     transition: color 0.2s;
 }
 
 .log-table__edit-link:hover {
-    color: var(--color-primary-dark);
+    color: #d06a94;
+}
+
+.log-table__edit-link i {
+    color: inherit;
 }
 
 .pagination {
