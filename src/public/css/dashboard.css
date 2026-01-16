@@ -62,6 +62,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 3rem;
+    background-color: #F9F9F9;
 }
 
 .main--with-modal {
@@ -255,16 +256,15 @@
 .log-table__edit-link {
     display: inline-block;
     font-size: 1.8rem;
-    color: #e891b1;
-    transition: color 0.2s;
+    background: linear-gradient(90deg, rgb(155, 123, 184), rgb(232, 145, 177));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: opacity 0.2s;
 }
 
 .log-table__edit-link:hover {
-    color: #d06a94;
-}
-
-.log-table__edit-link i {
-    color: inherit;
+    opacity: 0.7;
 }
 
 .pagination {
@@ -293,7 +293,7 @@
 
 .pagination__link--current {
     color: var(--color-white);
-    background-color: var(--color-primary);
+    background: linear-gradient(90deg, rgb(155, 123, 184), rgb(232, 145, 177));
 }
 
 .pagination__link--disabled {
