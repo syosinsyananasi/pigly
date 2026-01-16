@@ -1,0 +1,146 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal__content {
+    width: 100%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-lg);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    padding: 3rem;
+}
+
+.modal__title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--color-text);
+    margin-bottom: 2rem;
+}
+
+.modal__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.modal__form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal__label {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--color-text);
+    margin-bottom: 0.8rem;
+}
+
+.modal__required {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-white);
+    background-color: var(--color-error);
+    border-radius: 4px;
+}
+
+.modal__input {
+    padding: 1rem 1.2rem;
+    font-size: 1.6rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    background-color: var(--color-white);
+    transition: border-color 0.2s;
+}
+
+.modal__input:focus {
+    border-color: var(--color-primary);
+}
+
+.modal__input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.modal__input--with-unit {
+    flex: 1;
+}
+
+.modal__unit {
+    font-size: 1.6rem;
+    color: var(--color-text);
+}
+
+.modal__textarea {
+    padding: 1rem 1.2rem;
+    font-size: 1.6rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    background-color: var(--color-white);
+    min-height: 120px;
+    resize: vertical;
+    transition: border-color 0.2s;
+}
+
+.modal__textarea:focus {
+    border-color: var(--color-primary);
+}
+
+.modal__error {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    color: var(--color-error);
+}
+
+.modal__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.modal__button {
+    padding: 1.2rem 4rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.modal__button--back {
+    color: var(--color-text);
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+}
+
+.modal__button--back:hover {
+    background-color: var(--color-border);
+}
+
+.modal__button--submit {
+    color: var(--color-white);
+    background: linear-gradient(90deg, var(--color-gradient-start), var(--color-gradient-end));
+    border: none;
+}
+
+.modal__button--submit:hover {
+    opacity: 0.9;
+}

@@ -1,0 +1,128 @@
+.auth-body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f8d7e8 0%, #fce4ec 25%, #f3e5f5 50%, #e8f5e9 75%, #fce4ec 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 480px;
+}
+
+.auth-card {
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-card);
+    padding: 4rem 3rem;
+    text-align: center;
+}
+
+.auth-card__logo {
+    font-size: 4rem;
+    font-weight: 300;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    letter-spacing: 0.1em;
+}
+
+.auth-card__title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--color-text);
+    margin-bottom: 0.5rem;
+}
+
+.auth-card__step {
+    font-size: 1.4rem;
+    color: var(--color-text-muted);
+    margin-bottom: 2rem;
+}
+
+.auth-card__link {
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    color: var(--color-secondary);
+    text-decoration: underline;
+}
+
+.auth-card__link:hover {
+    color: var(--color-primary);
+}
+
+.auth-form {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.auth-form__group {
+    margin-bottom: 2rem;
+}
+
+.auth-form__label {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--color-text);
+    margin-bottom: 0.8rem;
+}
+
+.auth-form__input {
+    width: 100%;
+    padding: 1.2rem 1.5rem;
+    font-size: 1.6rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    background-color: var(--color-white);
+    transition: border-color 0.2s;
+}
+
+.auth-form__input:focus {
+    border-color: var(--color-primary);
+}
+
+.auth-form__input::placeholder {
+    color: var(--color-text-muted);
+}
+
+.auth-form__input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.auth-form__input--with-unit {
+    flex: 1;
+}
+
+.auth-form__unit {
+    font-size: 1.6rem;
+    color: var(--color-text);
+}
+
+.auth-form__error {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    color: var(--color-error);
+}
+
+.auth-form__button {
+    width: 100%;
+    padding: 1.4rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--color-white);
+    background: linear-gradient(90deg, var(--color-gradient-start), var(--color-gradient-end));
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    margin-top: 1rem;
+}
+
+.auth-form__button:hover {
+    opacity: 0.9;
+}
