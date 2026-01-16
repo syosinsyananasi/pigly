@@ -28,3 +28,10 @@
     white-space: nowrap;
     border: 0;
 }
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    color: var(--color-primary);
+    letter-spacing: 0.1em;
+}

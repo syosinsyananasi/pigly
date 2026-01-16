@@ -7,16 +7,16 @@
 
 @section('content')
 <header class="header">
-    <a class="header__logo" href="{{ route('weight_logs.index') }}">PiGLy</a>
+    <a class="header__logo logo" href="{{ route('weight_logs.index') }}">PiGLy</a>
     <nav class="header__nav">
         <a class="header__nav-button header__nav-button--settings" href="{{ route('weight_logs.goal_setting') }}">
-            <span class="header__nav-icon">&#9881;</span>
+            <i class="fa-solid fa-gear"></i>
             目標体重設定
         </a>
         <form action="{{ route('logout') }}" method="POST" class="header__logout-form">
             @csrf
             <button class="header__nav-button header__nav-button--logout" type="submit">
-                <span class="header__nav-icon">&#10145;</span>
+                <i class="fa-solid fa-right-from-bracket"></i>
                 ログアウト
             </button>
         </form>
