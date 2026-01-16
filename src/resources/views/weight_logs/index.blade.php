@@ -45,9 +45,13 @@
         <section class="search">
             <form class="search__form" action="{{ route('weight_logs.search') }}" method="GET">
                 <div class="search__inputs">
-                    <input class="search__date" type="date" name="from_date" value="{{ $searchFromDate ?? '' }}">
+                    <div class="search__date-wrapper">
+                        <input class="search__date" type="date" name="from_date" value="{{ $searchFromDate ?? '' }}">
+                    </div>
                     <span class="search__separator">～</span>
-                    <input class="search__date" type="date" name="to_date" value="{{ $searchToDate ?? '' }}">
+                    <div class="search__date-wrapper">
+                        <input class="search__date" type="date" name="to_date" value="{{ $searchToDate ?? '' }}">
+                    </div>
                     <button class="search__button" type="submit">検索</button>
                     @if($isSearching ?? false)
                         <button class="search__reset" type="button" onclick="location.href='{{ route('weight_logs.index') }}'">リセット</button>
