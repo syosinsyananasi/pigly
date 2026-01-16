@@ -6,7 +6,7 @@
     <h2 class="auth-card__title">新規会員登録</h2>
     <p class="auth-card__step">STEP1 アカウント情報の登録</p>
 
-    <form class="auth-form" action="{{ route('register') }}" method="POST">
+    <form class="auth-form" action="/register" method="POST">
         @csrf
         <div class="auth-form__group">
             <label class="auth-form__label" for="name">お名前</label>

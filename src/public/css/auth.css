@@ -34,8 +34,9 @@
 }
 
 .auth-card__logo {
+    font-family: 'Playfair Display', serif;
     font-size: 4rem;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--color-primary);
     margin-bottom: 1rem;
     letter-spacing: 0.1em;
