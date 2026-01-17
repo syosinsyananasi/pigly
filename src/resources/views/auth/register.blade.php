@@ -32,7 +32,9 @@
             @enderror
         </div>
 
-        <button class="auth-form__button" type="submit">次に進む</button>
+        <div class="auth-form__button-wrapper">
+            <button class="auth-form__button" type="submit">次に進む</button>
+        </div>
     </form>
 
     <a class="auth-card__link" href="{{ route('login') }}">ログインはこちら</a>

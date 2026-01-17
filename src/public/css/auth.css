@@ -46,7 +46,7 @@
     font-size: 2rem;
     font-weight: 500;
     color: var(--color-text);
-    margin-bottom: 0.5rem;
+    margin-bottom: 3rem;
 }
 
 .auth-card__step {
@@ -59,13 +59,11 @@
     display: inline-block;
     margin-top: 2rem;
     font-size: 1.4rem;
-    color: var(--color-secondary);
+    color: #77BDFF;
     text-decoration: underline;
 }
 
-.auth-card__link:hover {
-    color: var(--color-primary);
-}
+
 
 .auth-form {
     margin-top: 2rem;
@@ -123,18 +121,22 @@
     color: var(--color-error);
 }
 
+.auth-form__button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
 .auth-form__button {
-    width: 100%;
-    padding: 1.4rem;
+    padding: 1.2rem 4rem;
     font-size: 1.6rem;
     font-weight: 500;
     color: var(--color-white);
     background: linear-gradient(90deg, var(--color-gradient-start), var(--color-gradient-end));
     border: none;
-    border-radius: 50px;
+    border-radius: 20px;
     cursor: pointer;
     transition: opacity 0.2s;
-    margin-top: 1rem;
 }
 
 .auth-form__button:hover {

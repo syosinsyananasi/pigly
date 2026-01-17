@@ -23,7 +23,9 @@
             @enderror
         </div>
 
-        <button class="auth-form__button" type="submit">ログイン</button>
+        <div class="auth-form__button-wrapper">
+            <button class="auth-form__button" type="submit">ログイン</button>
+        </div>
     </form>
 
     <a class="auth-card__link" href="{{ route('register.step1') }}">アカウント作成はこちら</a>

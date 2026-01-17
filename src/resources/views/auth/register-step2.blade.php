@@ -30,7 +30,9 @@
             @enderror
         </div>
 
-        <button class="auth-form__button" type="submit">アカウント作成</button>
+        <div class="auth-form__button-wrapper">
+            <button class="auth-form__button" type="submit">アカウント作成</button>
+        </div>
     </form>
 </div>
 @endsection
