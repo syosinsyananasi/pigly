@@ -6,7 +6,7 @@
     <h2 class="auth-card__title">新規会員登録</h2>
     <p class="auth-card__step">STEP1 アカウント情報の登録</p>
 
-    <form class="auth-form" action="/register" method="POST">
+    <form class="auth-form" action="/register" method="POST" novalidate>
         @csrf
         <div class="auth-form__group">
             <label class="auth-form__label" for="name">お名前</label>
@@ -18,7 +18,7 @@
 
         <div class="auth-form__group">
             <label class="auth-form__label" for="email">メールアドレス</label>
-            <input class="auth-form__input" type="email" id="email" name="email" value="{{ old('email') }}" placeholder="メールアドレスを入力">
+            <input class="auth-form__input" type="text" id="email" name="email" value="{{ old('email') }}" placeholder="メールアドレスを入力">
             @error('email')
                 <p class="auth-form__error">{{ $message }}</p>
             @enderror

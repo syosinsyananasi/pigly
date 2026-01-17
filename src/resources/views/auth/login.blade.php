@@ -5,7 +5,7 @@
     <h1 class="auth-card__logo">PiGLy</h1>
     <h2 class="auth-card__title">ログイン</h2>
 
-    <form class="auth-form" action="{{ route('login') }}" method="POST">
+    <form class="auth-form" action="{{ route('login') }}" method="POST" novalidate>
         @csrf
         <div class="auth-form__group">
             <label class="auth-form__label" for="email">メールアドレス</label>
