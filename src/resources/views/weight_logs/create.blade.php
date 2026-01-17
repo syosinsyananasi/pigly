@@ -11,7 +11,7 @@
     <nav class="header__nav">
         <a class="header__nav-button header__nav-button--settings" href="{{ route('weight_logs.goal_setting') }}">
             <i class="fa-solid fa-gear"></i>
-            目標体重設定
+            <b>目標体重設定</b>
         </a>
         <form action="{{ route('logout') }}" method="POST" class="header__logout-form">
             @csrf
@@ -26,7 +26,7 @@
 <main class="main main--with-modal">
     <div class="modal">
         <div class="modal__content">
-            <h2 class="modal__title">Weight Logを追加</h2>
+            <h2 class="modal__title"><b>Weight Logを追加</b></h2>
 
             <form class="modal__form" action="{{ route('weight_logs.store') }}" method="POST">
                 @csrf
