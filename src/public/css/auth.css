@@ -5,13 +5,13 @@
             transparent 0%,
             rgba(254, 208, 210, 0.3) 30%,
             rgba(254, 208, 210, 0.7) 50%,
-            #FED0D2 70%,
-            #FFC0B9 100%
+            rgba(254, 208, 210, 1) 70%,
+            rgba(255, 192, 185, 1) 100%
         ),
         linear-gradient(to right,
-            #D6CFF8 0%,
-            #F5CEF3 50%,
-            #FA86B7 100%
+            rgba(214, 207, 248, 1) 0%,
+            rgba(245, 206, 243, 1) 50%,
+            rgba(250, 134, 183, 1) 100%
         );
     background-blend-mode: normal;
     display: flex;
@@ -59,11 +59,9 @@
     display: inline-block;
     margin-top: 2rem;
     font-size: 1.4rem;
-    color: #77BDFF;
+    color: rgba(119, 189, 255, 1);
     text-decoration: underline;
 }
-
-
 
 .auth-form {
     margin-top: 2rem;
@@ -94,10 +92,6 @@
 
 .auth-form__input:focus {
     border-color: var(--color-primary);
-}
-
-.auth-form__input::placeholder {
-    color: var(--color-text-muted);
 }
 
 .auth-form__input-wrapper {
