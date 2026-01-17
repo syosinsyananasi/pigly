@@ -26,7 +26,7 @@
 <main class="main main--with-modal">
     <div class="modal">
         <div class="modal__content">
-            <h2 class="modal__title"><b>Weight Logを追加</b></h2>
+            <h2 class="modal__title">Weight Logを追加</h2>
 
             <form class="modal__form" action="{{ route('weight_logs.store') }}" method="POST">
                 @csrf
@@ -49,7 +49,7 @@
                         <span class="modal__required">必須</span>
                     </label>
                     <div class="modal__input-wrapper">
-                        <input class="modal__input modal__input--with-unit" type="text" id="weight" name="weight" value="{{ old('weight') }}" placeholder="50.0">
+                        <input class="modal__input modal__input--with-unit" type="number" step="0.1" inputmode="decimal" id="weight" name="weight" value="{{ old('weight') }}" placeholder="50.0">
                         <span class="modal__unit">kg</span>
                     </div>
                     @error('weight')
@@ -63,7 +63,7 @@
                         <span class="modal__required">必須</span>
                     </label>
                     <div class="modal__input-wrapper">
-                        <input class="modal__input modal__input--with-unit" type="text" id="calories" name="calories" value="{{ old('calories') }}" placeholder="1200">
+                        <input class="modal__input modal__input--with-unit" type="number" inputmode="numeric" id="calories" name="calories" value="{{ old('calories') }}" placeholder="1200">
                         <span class="modal__unit">cal</span>
                     </div>
                     @error('calories')
@@ -76,7 +76,7 @@
                         運動時間
                         <span class="modal__required">必須</span>
                     </label>
-                    <input class="modal__input" type="text" id="exercise_time" name="exercise_time" value="{{ old('exercise_time') }}" placeholder="01:30">
+                    <input class="modal__input" type="time" id="exercise_time" name="exercise_time" value="{{ old('exercise_time') }}" placeholder="01:30">
                     @error('exercise_time')
                         <p class="modal__error">{{ $message }}</p>
                     @enderror
