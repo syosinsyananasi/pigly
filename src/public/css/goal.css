@@ -59,11 +59,29 @@
     color: var(--color-error);
 }
 
+.goal-form__actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 1rem;
+}
+
 .goal-form__buttons {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-top: 1rem;
+}
+
+.goal-form__delete {
+    position: absolute;
+    right: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-error);
+    display: flex;
+    align-items: center;
 }
 
 .goal-form__button {

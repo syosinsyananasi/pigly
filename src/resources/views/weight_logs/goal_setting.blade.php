@@ -40,9 +40,14 @@
                 @enderror
             </div>
 
-            <div class="goal-form__buttons">
-                <a class="goal-form__button goal-form__button--back" href="{{ route('weight_logs.index') }}">戻る</a>
-                <button class="goal-form__button goal-form__button--submit" type="submit">更新</button>
+            <div class="goal-form__actions">
+                <div class="goal-form__buttons">
+                    <a class="goal-form__button goal-form__button--back" href="{{ route('weight_logs.index') }}">戻る</a>
+                    <button class="goal-form__button goal-form__button--submit" type="submit">更新</button>
+                </div>
+                <button class="goal-form__delete" type="button">
+                    <span class="material-symbols-outlined">delete</span>
+                </button>
             </div>
         </form>
     </div>

@@ -32,7 +32,9 @@
             @method('PUT')
             <div class="detail-form__group">
                 <label class="detail-form__label" for="date">日付</label>
-                <input class="detail-form__input" type="date" id="date" name="date" value="{{ old('date', $weightLog->date->format('Y-m-d')) }}">
+                <div class="detail-form__date-wrapper">
+                    <input class="detail-form__input detail-form__input--date" type="date" id="date" name="date" value="{{ old('date', $weightLog->date->format('Y-m-d')) }}">
+                </div>
                 @error('date')
                     <p class="detail-form__error">{{ $message }}</p>
                 @enderror
@@ -76,10 +78,14 @@
                 @enderror
             </div>
 
-            <div class="detail-form__buttons">
-                <a class="detail-form__button detail-form__button--back" href="{{ route('weight_logs.index') }}">戻る</a>
-                <button class="detail-form__button detail-form__button--submit" type="submit">更新</button>
-                <button class="detail-form__button detail-form__button--delete" type="button" onclick="document.getElementById('delete-form').submit();">&#128465;</button>
+            <div class="detail-form__actions">
+                <div class="detail-form__buttons">
+                    <a class="detail-form__button detail-form__button--back" href="{{ route('weight_logs.index') }}">戻る</a>
+                    <button class="detail-form__button detail-form__button--submit" type="submit">更新</button>
+                </div>
+                <button class="detail-form__delete" type="button" onclick="document.getElementById('delete-form').submit();">
+                    <span class="material-symbols-outlined">delete</span>
+                </button>
             </div>
         </form>
 

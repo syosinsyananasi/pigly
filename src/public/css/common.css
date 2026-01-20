@@ -14,7 +14,9 @@
     --color-border: rgba(224, 224, 224, 1);
     --color-background: rgba(249, 249, 249, 1);
     --color-white: rgba(255, 255, 255, 1);
-    --color-placeholder: rgba(230, 230, 230, 1);
+
+    /* プレースホルダー - 見やすいグレー */
+    --color-placeholder: rgba(153, 153, 153, 1);
 
     /* Gray variations */
     --color-gray: rgba(136, 136, 136, 1);
@@ -46,6 +48,18 @@
     border: 0;
 }
 
+/* ========================================
+   入力フィールドの色（シンプルに統一）
+   ======================================== */
+
+/* 入力テキストは黒 */
+input,
+textarea,
+select {
+    color: var(--color-text);
+}
+
+/* プレースホルダーはグレー */
 ::placeholder {
     color: var(--color-placeholder);
 }

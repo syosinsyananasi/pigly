@@ -44,6 +44,40 @@
     border-color: var(--color-primary);
 }
 
+.detail-form__date-wrapper {
+    position: relative;
+}
+
+.detail-form__date-wrapper::after {
+    content: '▼';
+    position: absolute;
+    right: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    pointer-events: none;
+}
+
+.detail-form__input--date {
+    width: 100%;
+    padding-right: 3rem;
+}
+
+.detail-form__input--date::-webkit-calendar-picker-indicator {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.detail-form__input[type="time"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
 .detail-form__input-wrapper {
     display: flex;
     align-items: center;
@@ -80,12 +114,30 @@
     color: var(--color-error);
 }
 
+.detail-form__actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 1rem;
+}
+
 .detail-form__buttons {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin-top: 1rem;
+}
+
+.detail-form__delete {
+    position: absolute;
+    right: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-error);
+    display: flex;
+    align-items: center;
 }
 
 .detail-form__button {
@@ -106,13 +158,5 @@
 .detail-form__button--submit {
     color: var(--color-white);
     background: linear-gradient(90deg, var(--color-gradient-start), var(--color-gradient-end));
-    border: none;
-}
-
-.detail-form__button--delete {
-    padding: 1.2rem;
-    font-size: 2rem;
-    color: var(--color-primary);
-    background: none;
     border: none;
 }
