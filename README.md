@@ -67,21 +67,7 @@
 
 ## ER図
 
-```
-+----------------+       +------------------+       +----------------+
-|     users      |       |   weight_target  |       |  weight_logs   |
-+----------------+       +------------------+       +----------------+
-| id        (PK) |<---+  | id          (PK) |   +-->| id        (PK) |
-| name           |    |  | user_id     (FK) |---+   | user_id   (FK) |
-| email          |    +--| target_weight    |       | date           |
-| password       |       | created_at       |       | weight         |
-| created_at     |       | updated_at       |       | calories       |
-| updated_at     |       +------------------+       | exercise_time  |
-+----------------+                                  | exercise_content|
-                                                    | created_at     |
-                                                    | updated_at     |
-                                                    +----------------+
-```
+![ER図](docs/relation.drawio.png)
 
 ## 環境構築
 
