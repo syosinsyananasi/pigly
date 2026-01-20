@@ -12,6 +12,7 @@ class WeightLogController extends Controller
 {
     public function index(Request $request)
     {
+        /** @var \App\Models\User $user */
         $user = Auth::user();
         $weightTarget = $user->weightTarget;
         $latestLog = $user->weightLogs()->orderBy('date', 'desc')->first();
@@ -65,18 +66,18 @@ class WeightLogController extends Controller
         return redirect()->route('weight_logs.index');
     }
 
-    public function show(WeightLog $weightLog)
+    public function show(WeightLog $weightLogId)
     {
-        $this->authorize('view', $weightLog);
+        $this->authorize('view', $weightLogId);
 
-        return view('weight_logs.show', compact('weightLog'));
+        return view('weight_logs.show', ['weightLog' => $weightLogId]);
     }
 
-    public function update(UpdateWeightLogRequest $request, WeightLog $weightLog)
+    public function update(UpdateWeightLogRequest $request, WeightLog $weightLogId)
     {
-        $this->authorize('update', $weightLog);
+        $this->authorize('update', $weightLogId);
 
-        $weightLog->update([
+        $weightLogId->update([
             'date' => $request->date,
             'weight' => $request->weight,
             'calories' => $request->calories,
@@ -87,11 +88,11 @@ class WeightLogController extends Controller
         return redirect()->route('weight_logs.index');
     }
 
-    public function destroy(WeightLog $weightLog)
+    public function destroy(WeightLog $weightLogId)
     {
-        $this->authorize('delete', $weightLog);
+        $this->authorize('delete', $weightLogId);
 
-        $weightLog->delete();
+        $weightLogId->delete();
 
         return redirect()->route('weight_logs.index');
     }

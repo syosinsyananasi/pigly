@@ -29,7 +29,7 @@ Route::middleware(['auth', 'weight.target'])->group(function () {
     Route::get('/weight_logs/search', [WeightLogController::class, 'index'])->name('weight_logs.search');
     Route::get('/weight_logs/goal_setting', [WeightTargetController::class, 'edit'])->name('weight_logs.goal_setting');
     Route::put('/weight_logs/goal_setting', [WeightTargetController::class, 'update'])->name('weight_logs.goal_setting.update');
-    Route::get('/weight_logs/{weightLog}', [WeightLogController::class, 'show'])->name('weight_logs.show');
-    Route::put('/weight_logs/{weightLog}/update', [WeightLogController::class, 'update'])->name('weight_logs.update');
-    Route::delete('/weight_logs/{weightLog}/delete', [WeightLogController::class, 'destroy'])->name('weight_logs.delete');
+    Route::get('/weight_logs/{weightLogId}', [WeightLogController::class, 'show'])->name('weight_logs.show');
+    Route::put('/weight_logs/{weightLogId}/update', [WeightLogController::class, 'update'])->name('weight_logs.update');
+    Route::delete('/weight_logs/{weightLogId}/delete', [WeightLogController::class, 'destroy'])->name('weight_logs.delete');
 });
