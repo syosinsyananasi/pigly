@@ -24,7 +24,7 @@
 </header>
 
 <main class="main main--center">
-    <div class="goal-card">
+    <div class="goal-card-modal">
         <h2 class="goal-card__title">目標体重設定</h2>
 
         <form class="goal-form" action="{{ route('weight_logs.goal_setting.update') }}" method="POST">
@@ -40,14 +40,9 @@
                 @enderror
             </div>
 
-            <div class="goal-form__actions">
-                <div class="goal-form__buttons">
-                    <a class="goal-form__button goal-form__button--back" href="{{ route('weight_logs.index') }}">戻る</a>
-                    <button class="goal-form__button goal-form__button--submit" type="submit">更新</button>
-                </div>
-                <button class="goal-form__delete" type="button">
-                    <span class="material-symbols-outlined">delete</span>
-                </button>
+            <div class="goal-form__buttons">
+                <a class="goal-form__button goal-form__button--back" href="{{ route('weight_logs.index') }}">戻る</a>
+                <button class="goal-form__button goal-form__button--submit" type="submit">更新</button>
             </div>
         </form>
     </div>
