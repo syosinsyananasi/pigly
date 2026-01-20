@@ -33,12 +33,6 @@
     cursor: pointer;
 }
 
-.header__nav-button--active {
-    background-color: var(--color-primary);
-    border-color: var(--color-primary);
-    color: var(--color-white);
-}
-
 .header__logout-form {
     display: inline;
 }
@@ -157,7 +151,7 @@
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius);
     background-color: var(--color-white);
-    color: var(--color-gray-light);
+    color: var(--color-text);
 }
 
 .search__date::-webkit-calendar-picker-indicator {

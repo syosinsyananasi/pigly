@@ -9,7 +9,7 @@
 <header class="header">
     <a class="header__logo logo" href="{{ route('weight_logs.index') }}">PiGLy</a>
     <nav class="header__nav">
-        <a class="header__nav-button header__nav-button--settings header__nav-button--active" href="{{ route('weight_logs.goal_setting') }}">
+        <a class="header__nav-button header__nav-button--settings" href="{{ route('weight_logs.goal_setting') }}">
             <i class="fa-solid fa-gear"></i>
             目標体重設定
         </a>
