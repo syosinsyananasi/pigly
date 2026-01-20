@@ -14,7 +14,7 @@ class UpdateWeightTargetRequest extends FormRequest
     public function rules()
     {
         return [
-            'target_weight' => ['required', 'numeric', 'max:999.9', 'regex:/^\d{1,3}(\.\d)?$/'],
+            'target_weight' => ['required', 'numeric', 'max:9999.9', 'regex:/^\d{1,4}(\.\d)?$/'],
         ];
     }
 

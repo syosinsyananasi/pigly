@@ -15,7 +15,7 @@ class StoreWeightLogRequest extends FormRequest
     {
         return [
             'date' => ['required', 'date'],
-            'weight' => ['required', 'numeric', 'max:999.9', 'regex:/^\d{1,3}(\.\d)?$/'],
+            'weight' => ['required', 'numeric', 'max:9999.9', 'regex:/^\d{1,4}(\.\d)?$/'],
             'calories' => ['required', 'integer'],
             'exercise_time' => ['required', 'not_in:00:00'],
             'exercise_content' => ['nullable', 'max:120'],
