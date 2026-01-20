@@ -28,7 +28,6 @@
 .auth-card {
     background-color: var(--color-white);
     border-radius: var(--border-radius-lg);
-    box-shadow: var(--shadow-card);
     padding: 4rem 3rem;
     text-align: center;
 }
@@ -59,7 +58,7 @@
     display: inline-block;
     margin-top: 2rem;
     font-size: 1.4rem;
-    color: rgba(119, 189, 255, 1);
+    color: var(--color-link);
     text-decoration: underline;
 }
 
@@ -128,6 +127,6 @@
     color: var(--color-white);
     background: linear-gradient(90deg, var(--color-gradient-start), var(--color-gradient-end));
     border: none;
-    border-radius: 20px;
+    border-radius: var(--border-radius-pill);
     cursor: pointer;
 }

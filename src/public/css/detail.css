@@ -3,7 +3,6 @@
     margin: 0 auto;
     background-color: var(--color-white);
     border-radius: var(--border-radius-lg);
-    box-shadow: var(--shadow-card);
     padding: 3rem;
 }
 

@@ -3,7 +3,6 @@
     max-width: 500px;
     background-color: var(--color-white);
     border-radius: var(--border-radius-lg);
-    box-shadow: var(--shadow-card);
     padding: 3rem;
     text-align: center;
 }

@@ -29,18 +29,14 @@
     font-weight: 700;
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius);
-    background-color: rgba(231, 231, 231, 1);
+    background-color: var(--color-gray-light);
     cursor: pointer;
-    transition: all 0.2s;
 }
 
-.header__nav-button--settings,
-.header__nav-button--logout {
-    color: var(--color-text);
-}
-
-.header__nav-icon {
-    font-size: 1.4rem;
+.header__nav-button--active {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-white);
 }
 
 .header__logout-form {
@@ -51,7 +47,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 6rem 3rem 3rem;
-    background-color: rgba(249, 249, 249, 1);
+    background-color: var(--color-background);
 }
 
 .main--with-modal {
@@ -68,7 +64,6 @@
 
 .summary {
     display: flex;
-    gap: 0;
     background-color: var(--color-white);
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius);
@@ -108,10 +103,6 @@
     color: var(--color-text);
 }
 
-.summary__value--diff {
-    color: var(--color-text);
-}
-
 .summary__unit {
     font-size: 1.6rem;
     font-weight: 400;
@@ -119,9 +110,9 @@
 }
 
 .content-card {
-    background-color: rgba(255, 255, 255, 1);
-    border-radius: 8px;
-    padding: 20px;
+    background-color: var(--color-white);
+    border-radius: var(--border-radius);
+    padding: 2rem;
 }
 
 .search {
@@ -166,7 +157,7 @@
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius);
     background-color: var(--color-white);
-    color: rgba(231, 231, 231, 1);
+    color: var(--color-gray-light);
 }
 
 .search__date::-webkit-calendar-picker-indicator {
@@ -190,8 +181,8 @@
     font-size: 1.4rem;
     font-family: inherit;
     color: var(--color-white);
-    background-color: rgba(136, 136, 136, 1);
-    border: 1px solid rgba(136, 136, 136, 1);
+    background-color: var(--color-gray);
+    border: 1px solid var(--color-gray);
     border-radius: var(--border-radius);
     cursor: pointer;
     text-align: center;
@@ -248,7 +239,7 @@
     bottom: 0;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, rgba(155, 123, 184, 1), rgba(232, 145, 177, 1));
+    background: linear-gradient(90deg, var(--color-gradient-start), var(--color-gradient-end));
 }
 
 .log-table__header {
@@ -264,7 +255,7 @@
 }
 
 .log-table__row:hover {
-    background-color: rgba(250, 250, 250, 1);
+    background-color: var(--color-background);
 }
 
 .log-table__cell {
@@ -282,7 +273,7 @@
 .log-table__edit-link {
     display: inline-block;
     font-size: 1.8rem;
-    background: linear-gradient(90deg, rgba(155, 123, 184, 1), rgba(232, 145, 177, 1));
+    background: linear-gradient(90deg, var(--color-gradient-start), var(--color-gradient-end));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -304,12 +295,12 @@
     height: 3.2rem;
     font-size: 1.4rem;
     color: var(--color-text);
-    border-radius: 4px;
+    border-radius: var(--border-radius-sm);
 }
 
 .pagination__link--current {
     color: var(--color-white);
-    background: linear-gradient(90deg, rgba(155, 123, 184, 1), rgba(232, 145, 177, 1));
+    background: linear-gradient(90deg, var(--color-gradient-start), var(--color-gradient-end));
 }
 
 .pagination__link--disabled {
