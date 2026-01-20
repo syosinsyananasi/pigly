@@ -165,16 +165,8 @@
     border: 1px solid var(--color-border);
 }
 
-.modal__button--back:hover {
-    background-color: var(--color-border);
-}
-
 .modal__button--submit {
     color: var(--color-white);
     background: linear-gradient(90deg, var(--color-gradient-start), var(--color-gradient-end));
     border: none;
-}
-
-.modal__button--submit:hover {
-    opacity: 0.9;
 }

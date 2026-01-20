@@ -82,16 +82,8 @@
     border: 1px solid var(--color-border);
 }
 
-.goal-form__button--back:hover {
-    background-color: var(--color-border);
-}
-
 .goal-form__button--submit {
     color: var(--color-white);
     background: linear-gradient(90deg, var(--color-gradient-start), var(--color-gradient-end));
     border: none;
-}
-
-.goal-form__button--submit:hover {
-    opacity: 0.9;
 }

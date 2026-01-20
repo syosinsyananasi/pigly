@@ -194,14 +194,8 @@
     border: 1px solid rgba(136, 136, 136, 1);
     border-radius: var(--border-radius);
     cursor: pointer;
-    transition: background-color 0.2s;
     text-align: center;
     box-sizing: border-box;
-}
-
-.search__button:hover {
-    background-color: rgba(102, 102, 102, 1);
-    border-color: rgba(102, 102, 102, 1);
 }
 
 .search__reset {
@@ -214,13 +208,8 @@
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius);
     cursor: pointer;
-    transition: background-color 0.2s;
     text-align: center;
     box-sizing: border-box;
-}
-
-.search__reset:hover {
-    background-color: var(--color-border);
 }
 
 .search__add-button {
@@ -231,11 +220,6 @@
     border: none;
     border-radius: var(--border-radius);
     cursor: pointer;
-    transition: opacity 0.2s;
-}
-
-.search__add-button:hover {
-    opacity: 0.9;
 }
 
 .search__result-text {
@@ -302,11 +286,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    transition: opacity 0.2s;
-}
-
-.log-table__edit-link:hover {
-    opacity: 0.7;
 }
 
 .pagination {
@@ -326,11 +305,6 @@
     font-size: 1.4rem;
     color: var(--color-text);
     border-radius: 4px;
-    transition: all 0.2s;
-}
-
-.pagination__link:hover {
-    background-color: var(--color-background);
 }
 
 .pagination__link--current {

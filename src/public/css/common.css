@@ -12,6 +12,7 @@
     --color-background: rgba(245, 245, 245, 1);
     --color-white: rgba(255, 255, 255, 1);
     --color-error: rgba(231, 76, 60, 1);
+    --color-placeholder: rgba(230, 230, 230, 1);
     --shadow-card: 0 2px 10px rgba(0, 0, 0, 0.1);
     --border-radius: 8px;
     --border-radius-lg: 16px;
@@ -37,17 +38,17 @@
 }
 
 ::placeholder {
-    color: rgba(230, 230, 230, 1);
+    color: var(--color-placeholder);
 }
 
 ::-webkit-input-placeholder {
-    color: rgba(230, 230, 230, 1);
+    color: var(--color-placeholder);
 }
 
 ::-moz-placeholder {
-    color: rgba(230, 230, 230, 1);
+    color: var(--color-placeholder);
 }
 
 :-ms-input-placeholder {
-    color: rgba(230, 230, 230, 1);
+    color: var(--color-placeholder);
 }

@@ -130,9 +130,4 @@
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    transition: opacity 0.2s;
-}
-
-.auth-form__button:hover {
-    opacity: 0.9;
 }
