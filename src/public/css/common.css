@@ -25,7 +25,7 @@
     --color-link: rgba(119, 189, 255, 1);
 
     /* Overlay */
-    --color-overlay: rgba(0, 0, 0, 0.3);
+    --color-overlay: rgba(0, 0, 0, 0.5);
 
     /* Border radius */
     --border-radius: 8px;
