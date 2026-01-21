@@ -11,7 +11,7 @@ class AuthController extends Controller
 {
     public function showRegisterStep2()
     {
-        return view('auth.register-step2');
+        return view('register.step2');
     }
 
     public function storeInitialWeight(InitialWeightRequest $request)

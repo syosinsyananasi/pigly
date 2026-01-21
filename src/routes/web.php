@@ -15,7 +15,7 @@ Route::middleware('guest')->group(function () {
         return redirect('/register/step1');
     });
     Route::get('/register/step1', function () {
-        return view('auth.register');
+        return view('register.step1');
     })->name('register.step1');
 });
 
