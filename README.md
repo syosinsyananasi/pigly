@@ -9,7 +9,7 @@
 ## アプリケーションURL
 
 - 開発環境：<http://localhost>
-- 会員登録：<http://localhost/register>
+- 会員登録：<http://localhost/register/step1>
 - ログイン：<http://localhost/login>
 
 ## 機能一覧
